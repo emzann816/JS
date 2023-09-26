@@ -57,7 +57,7 @@ let foodList = {
          price: 189,
          id: 11 },
 
-         {img: "/images/Caesar-Salad.jpg",
+         {img: "images/Caesar-Salad.jpg",
          name: "Chicken Cesar Salad",
          price: 295,
          id: 12 }
