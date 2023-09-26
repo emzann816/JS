@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/pizza-logo.webp" type="image/x-icon">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M756G5G&gtm_auth=&gtm_preview=&gtm_cookies_win=x"
+    height="0" width="0" style="display:none;visibility:hidden" id="tag-manager"></iframe>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <script src="https://use.fontawesome.com/d2b46f845b.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"></script>
+    <title>Pizzaria</title>
+</head>
+<body class="bg-warning-subtle">
+  <nav class="navbar sticky-lg-top navbar-expand-lg bg-danger mb-2" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img class="navbar-image rounded-circle ms-4 me-3" src="images/pizza-logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <b><li class="nav-item ms-3 me-5">
+              <h5><a class="nav-link text-light link-dark" aria-current="page" href="home.html">Home</a></h5>
+            </li></b>
+            <li class="nav-item me-5">
+              <b><h5><a class="nav-link text-light link-dark" href="menu.html">Menu</a></h5>
+            </li></b>
+            <b> <li class="nav-item">
+              <h5><a class="nav-link text-light link-dark" href="contactus.html" >Contact Us</a></h5>
+            </li></b>
+          </ul>
+          <form class="d-flex justify-content-center col-4" role="search">
+            <input class="form-control me-2 bg-light text-dark placeholder-color" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+          
+          <form class="d-flex justify-content-center col-2">
+              
+                <b><a class="nav-link ms-2 me-2 text-light link-dark" href="index.html">Sign In</a></b>
+                <b><img src="/images/shopping.svg" style="width: 25px;" class="shopping">
+                  <span id="quantity" class="quantity text-light">0</span></b>
+                </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section class="sticky-lg-top z-1 bg-white shadow-card md:shadow-none text-center bg-light">
+      <div class="5xl:mx-auto 5xl:max-w-7xl 3xl:mx-auto 3xl:max-w-6xl xl:mx-auto xl:max-w-5xl lg:mx-auto lg:max-w-4xl md:mx-auto md:max-w-2xl max-w-full">
+          <div class="relative flex  items-center after:absolute "><br>
+              <path d="m8.125 9 3.88 3.88L15.885 9a.996.996 0 1 1 1.41 1.41L12.705 15a.996.996 0 0 1-1.41 0l-4.59-4.59a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0Z" fill="#BEBEBE"></path>
+              <div id="scrollspy" class="flex h-full flex-1 select-none overflow-x-auto scroll-smooth whitespace-nowrap scrollbar-hide">
+                  <b><a id="menu-item-best-seller" data-test-id="menu-item-2" data-seq="2" class="flex h-full items-center link-danger border-b-[3px] border-transparent text-dark text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" href="/menu/best-seller">Best Sellers</a></b>
+                  <b><a id="menu-item-pizza" data-test-id="menu-item-3" data-seq="3" class="flex h-full items-center link-danger border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" href="/menu/pizza">Pizza</a></b>
+                  <b><a id="menu-item-pizza-deal" data-test-id="menu-item-4" data-seq="4" class="flex h-full items-center link-danger  border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" href="/menu/pizza-deal">Pizza Deals</a></b>
+                  <b><a id="menu-item-pasta" data-test-id="menu-item-5" data-seq="5" class="flex h-full items-center link-danger  border-b-[3px] border-transparent text-dark   text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" href="/menu/pasta">Pasta</a></b>
+                  <b><a id="menu-item-group-meal" data-test-id="menu-item-6" data-seq="6" class="flex h-full items-center link-danger  border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" href="/menu/group-meal">Group Meals</a></b>
+                  <b><a id="menu-item-solo-meal" data-test-id="menu-item-7" data-seq="7" class="flex h-full items-center link-danger border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" href="/menu/solo-meal">Solo Meals</a></b>
+                  <b><a id="menu-item-chicken-sides" data-test-id="menu-item-8" data-seq="8" class="flex h-full items-center link-danger  border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" href="/menu/chicken-sides">Chicken and Sides</a></b>
+                  <b><a id="menu-item-drinks" data-test-id="menu-item-9" data-seq="9" class="flex h-full items-center link-danger border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" href="/menu/drinks">Drinks</a></div></b>
+                  </path></div></div>
+                  <br>
+
+  </section>
+  
+  <section id="shopUs" class="img-fluid bi-border-bottom">
+    
+  </section>
+  
+  <hr class="text-bg-danger">
+<center>  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-12 m-auto text-start">
+        <h3 class="fw-bold"> Does Pizzarie's really make their pizza and pasta fresh everyday? </h3> 
+        <p>Yes! Everything sold in SBARRO stores are handmade fresh all day, everyday. Pizzas and pastas are cooked and prepared in front of our customers. SBARRO was founded on the belief that nothing but the freshest food must be served to guests. This is part of the DNA of every Pizzarie's store..</p> </div>
+        <div class="col-md-6 start-end p-4"> 
+          <img src="/images/pizza-image.PNG" class="w-100" style="border-radius: 20px; box-shadow: 5px black;">
+          </div>
+          <hr class="text-bg-danger">
+          <div class="row">
+            <div class="col-md-6 start-end p-4">
+            <img src="/images/preparation-pizza.jpg" style="height:350px; width: 500px; border-radius: 20px; box-shadow: 5px black;">
+            </div>
+            <div class="col-md-6 col-12 m-auto text-start">
+              <h3 class="fw-bold">Why Customer always comes back?</h3> 
+              <p>Our dough is made fresh everyday with enriched flour and our well seasoned, thick and rich pizza sauce. </p> 
+          </div>
+        </div>
+      
+          <br>
+          <hr class="text-bg-danger">
+          
+          <div class="row">
+            <div class="col-md-6 col-12 m-auto text-start">
+              <h3 class="fw-bold"> Quality Service and Cleanliness </h3> 
+              <p>From responsibly sourcing product ingredients, providing efficient and convenient services to maintaining cleanliness within our restaurants - these are essential in our daily operations and procedures.</p> </div>
+              <div class="col-md-6 start-end p-4"> 
+                <img src="/images/our-food.jpg" class="w-100" style="height:350px; width: 500px; border-radius: 20px; box-shadow: 5px black;">
+                </div>
+          </div>
+                
+  </center>
+  </div>
+  </div>
+</div>
+</div>
+<hr class="text-bg-danger">
+
+  <center>
+    <!-- Carousel with cards -->
+    <section id="products" class="section-p1">
+      <h2>Featured Menu</h2>
+      <p>25% Discount for All Members!</p>
+ <div class="container-fluid">
+  <div class="wrapper d-inline-flex m-1">
+    <div class="single-card bg-danger">
+        <div class="img-area bg-dark">
+          <img src="/images/food-delivery.jpg" alt="" class="w-100">
+          <div class="overlay">
+            <button class="add-to-cart"><a href="/MP1/pages/articles.html" class="text-decoration-none"><i class="fa-solid fa-cart-plus cart"></i> Add to Cart </a></button>
+            <button class="add-to-cart"><a href="/MP1/pages/articles.html" class="text-decoration-none"><i class="fa-solid fa-peso-sign"></i> Buy Now </a></button>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-light pt-2 pb-2 ps-3" style="font-size:20px;">Our Pizza Delivery</h4>
+          <div class="rate">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p class="text-light pt-2 pb-2 ps-3" style=" font-weight: lighter;">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+      </div>
+  <div class="wrapper d-inline-flex m-1">
+  <div class="single-card bg-danger">
+      <div class="img-area bg-dark">
+        <img src="/images/traditional-italian.jpg" alt="">
+        <div class="overlay">
+          <button class="add-to-cart"><a href="/MP1/pages/articles.html" class="text-decoration-none"><i class="fa-solid fa-cart-plus cart"></i> Add to Cart </a></button>
+            <button class="add-to-cart"><a href="/MP1/pages/articles.html" class="text-decoration-none"><i class="fa-solid fa-peso-sign"></i> Buy Now </a></button>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-light pt-2 pb-2 ps-3" style="font-size:20px;">How to Order</h4>
+        <div class="rate">
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+        </div>
+        <p class="text-light pt-2 pb-2 ps-3" style=" font-weight: lighter;">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+      </div>
+    </div>
+    <div class="wrapper d-inline-flex m-1">
+    <div class="single-card bg-danger">
+      <div class="img-area bg-dark">
+        <img src="/images/our-food.jpg" alt="">
+        <div class="overlay">
+          <button class="add-to-cart"><a href="/MP1/pages/articles.html" class="text-decoration-none"><i class="fa-solid fa-cart-plus cart"></i> Add to Cart </a></button>
+            <button class="add-to-cart"><a href="/MP1/pages/articles.html" class="text-decoration-none"><i class="fa-solid fa-peso-sign"></i> Buy Now </a></button>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-light pt-2 pb-2 ps-3" style="font-size:20px;">Pizzarie's Foods</h4>
+        <div class="rate">
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+        </div>
+        <p class="text-light pt-2 pb-2 ps-3" style=" font-weight: lighter;">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper d-inline-flex m-1">
+  <div class="single-card bg-danger">
+      <div class="img-area bg-dark">
+        <img src="/images/delicious-food.jpg" alt="">
+        <div class="overlay">
+          <button class="add-to-cart"><a href="/MP1/pages/articles.html" class="text-decoration-none"><i class="fa-solid fa-cart-plus cart"></i> Add to Cart </a></button>
+            <button class="add-to-cart"><a href="/MP1/pages/articles.html" class="text-decoration-none"><i class="fa-solid fa-peso-sign"></i> Buy Now </a></button>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-light pt-2 pb-2 ps-3" style="font-size:20px;">Our Customer Loves It</h4>
+        <div class="rate">
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+        </div>
+        <p class="text-light pt-2 pb-2 ps-3" style=" font-weight: lighter;">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<hr>
+
+  </center>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i> Back to Top</button>
+      
+      
+
+    <!-- footer -->
+    <br><br>
+    <br>
+<br>
+<hr>
+<footer style="padding-top: 20px;" class="h-25">
+    <div class="col text-start">
+      <h4>Contact</h4>
+      <p class="mb-0"><strong>Address: </strong>Lorem ipsum dolo</p>
+      <p><strong>Phone: </strong>+639123456789</p>
+      <div class="socmed mt-1">
+        <h4 style="bottom: 0;">Follow Us:</h4>
+        <div class="socicon">
+          <i class="fa-brands fa-facebook mt-1"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="product.html">All Products</a>
+      <a href="">Privacy Policy</a>
+      <a href="">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="">View Cart</a>
+      <a href="">My Wishlist</a>
+      <a href="">Track My Order</a>
+      <a href="">Help</a>
+    </div>
+
+    <div class="col">
+      <h4>Payment Options</h4>
+      <div class="payment">
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-paypal"></i>
+        <i class="fa-brands fa-google-pay"></i>
+      </div>
+    </div>
+</footer>
+<br>
+<div class="container-fluid copyright fixed-bottom">
+  <p>&copy; 2023 - Pizzarie's Shop by Emilie Ann Sumallo</p>
+</div>
+
+      
+  <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    position: fixed;
+}
+
+input {
+    height: 40px;
+    padding: 0px 15px;
+    border: 1px solid #E4E7ED;
+    background-color: #FFF;
+    width: 100%;
+    border-radius: 40px 0px 0px 40px;
+   
+  }
+  
+  textarea.input {
+    padding: 15px;
+    min-height: 90px;
+  }
+  
+.header-search {
+    padding: 15px 0px;
+  }
+  
+  .header-search form {
+    position: relative;
+  }
+  
+  .header-search form .input-select {
+    margin-right: -4px;
+    border-radius: 40px 0px 0px 40px;
+  }
+  
+  .header-search form .input {
+    width: calc(100% - 260px);
+    margin-right: -4px;
+  }
+  
+  .search-btn {
+    height: 40px;
+    width: 150px;
+    background: #580210;
+    color: #FFF;
+    font-weight: 700;
+    border: none;
+    border-radius: 0px 40px 40px 0px;
+    margin-right: 20px;
+  }
+.sidebar {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right:  0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 320px;
+    z-index: 600;
+    float: right;
+  }
+  
+  @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 180px;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+.navbar-image{
+    width: 80px;
+    height: 70px;
+}
+
+
+.form-control.me-2.bg-light.text-dark.placeholder-color::placeholder{
+    color: black !important;
+    opacity: 0.4 !important;
+    font-style: italic;
+}
+
+#totalPrice{
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding:center;
+    position: relative;
+
+    
+}
+button {
+    float:right;
+    padding: 10px;
+}
+
+
+.quickLinks{
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.footer_links{
+    list-style: none;
+    padding: 10px;
+}
+
+.footer_links:hover{
+    font-size: 12.5pt;
+    font-weight: bold;
+    color: rgb(112, 110, 110);
+    transition: 0.4s ease;
+}
+
+.footer_pay{
+    list-style: none;
+    font-size: 25pt;
+}
+
+.footer_socmed{
+    list-style: none;
+    font-size: 10pt;
+    padding: 5px;
+}
+
+.socmed_img{
+    text-decoration: none;
+    color: white;
+}
+
+.socmed_img:hover{
+    color: rgb(112, 110, 110);
+    font-size: 16.5pt;
+    transition: 0.4s ease;
+
+}
+
+body{
+    background-color: #E3E7E8;
+    font-family: system-ui;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+header .shopping{
+    position: relative;
+    text-align: right;
+}
+header .shopping img{
+    width: 40px;
+}
+header .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.containter2 {
+    border-radius: 30px;
+    border-width: 15px;
+    border-color: black;
+}
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    
+	gap: 0;
+}
+.single-card {
+	position: relative;
+	width: 250px;
+	height: 350px;
+	margin: 10px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+	transition: box-shadow 0.3s ease;
+	overflow: hidden;
+	border-radius: 15px;
+	transition: all 0.8s ease-in-out;
+}
+.single-card:hover {
+	transform: translateY(-10px);
+}
+.img-area {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.img-area img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+.img-area:hover img {
+	transform: scale(1.1);
+}
+#shopUs{
+    background-image: url(images/banner_pizza.png);
+    height: 80vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+.list .item{
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+}
+.list .item img{
+    width: 90%;
+    height: 430px;
+    object-fit: cover;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin: 10px;
+}
+.list .item button{
+    background-color: #1C1F25;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+.cards{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #453E3B;
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .cards{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.cards h1{
+    color: #E8BC0E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.cards .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.cards .checkOut div{
+    background-color: #E8BC0E;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cards .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color: #fff;
+}
+.listCard {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+footer .logo_footer{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 19px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #eb1717;
+    margin-bottom: 10px;
+}
+
+footer a:hover{
+    color: #0a0000;
+}
+
+footer .socmed{
+    margin-top: 20px;
+}
+
+footer .socmed i{
+    font-size: 25px;
+    color: #df250c;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .payment i{
+    font-size: 25px;
+    color: #df250c;
+    padding-right: 4px;
+}
+
+
+
+.copyright{
+    text-align: center;
+    background-color: rgb(184, 13, 13);
+    margin-bottom: -20px;
+}
+
+.copyright p{
+    color: white;
+    font-style: Garamond;
+}
